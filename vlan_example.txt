@@ -1,0 +1,8 @@
+conf t
+vlan 10
+name LinuxLan
+int gigabitethernet 2/0/1
+switchport mode access
+switchport access vlan 10
+exit
+copy run start

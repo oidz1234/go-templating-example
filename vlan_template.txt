@@ -1,0 +1,8 @@
+conf t
+vlan {{.Id}}
+name {{.Name}}
+int gigabitethernet {{.Int}}
+switchport mode access
+switchport access vlan {{.Id}}
+exit
+copy run start
